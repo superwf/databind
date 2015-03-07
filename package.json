@@ -1,0 +1,34 @@
+{
+  "name": "databind",
+  "version": "1.0.0",
+  "description": "bind val of js with the browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "databind",
+    "js",
+    "browser",
+    "javascript",
+    "jquery"
+  ],
+  "author": "wangfan",
+  "license": "ISC",
+  "dependencies": {
+    "coffee-script": "^1.9.1",
+    "gulp": "^3.8.11",
+    "gulp-coffee": "^2.3.1",
+    "gulp-jade": "^1.0.0",
+    "gulp-karma": "0.0.4",
+    "gulp-less": "^3.0.1",
+    "gulp-livereload": "^3.8.0",
+    "karma": "^0.12.31",
+    "mocha": "^2.2.0",
+    "wiredep": "^2.2.2"
+  },
+  "devDependencies": {
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-mocha": "^0.1.10"
+  }
+}

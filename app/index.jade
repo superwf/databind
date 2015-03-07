@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title test databind
+
+    // build:css css/vendor.css
+    // bower:css
+    // endbower
+    // endbuild
+
+    // build:css css/main.css
+    link(rel='stylesheet', href='css/index.css')
+    // endbuild
+
+    // build:remove
+    script(src='http://localhost:35729/livereload.js')
+    // endbuild
+  body
+    div.col-6
+      form(id="form")
+        input(type="text", name="text", data-bind="name")
+    div.col-6
+      form(id="form1")
+        input(type="text", name="text", data-bind="name")
+    // build:js js/lib.js
+    // bower:js
+    script(src='bower_components/jquery/dist/jquery.js')
+    // endbower
+    // endbuild
+
+    // build:js({.tmp,app}) scripts/scripts.js
+    script(src="index.js")
+    script(src="databind.js")
+    // endbuild

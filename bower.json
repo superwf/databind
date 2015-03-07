@@ -1,0 +1,27 @@
+{
+  "name": "databind",
+  "main": "index.js",
+  "version": "0.0.0",
+  "authors": [
+    "wangfan"
+  ],
+  "description": "bind js val with the browser end",
+  "keywords": [
+    "databind",
+    "jquery",
+    "browser"
+  ],
+  "license": "MIT",
+  "homepage": "superwf.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}
