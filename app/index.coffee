@@ -15,3 +15,5 @@ $ ->
     console.log "user name is " + newUser[attr]
     $form.find("[data-bind="+attr+"]").val(newUser[attr])
   )
+  console.log 124
+  return

@@ -9,8 +9,9 @@ $(function() {
     console.log("user name is " + newUser[attr]);
     return $form1.find("[data-bind=" + attr + "]").val(newUser[attr]);
   });
-  return $.bind($form1, user, function(newUser, attr) {
+  $.bind($form1, user, function(newUser, attr) {
     console.log("user name is " + newUser[attr]);
     return $form.find("[data-bind=" + attr + "]").val(newUser[attr]);
   });
+  return console.log(124);
 });

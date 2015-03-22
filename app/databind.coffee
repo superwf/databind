@@ -20,7 +20,16 @@
           $this.val obj[attr]
         triggerName = attr + ":change"
         pubSub.on triggerName, (evt, newVal)->
-          obj[attr] = newVal
+          # split attr like 'name.first.family'
+          if attr.indexOf('.') > 0
+            attrs = attr.split('.')
+            lastAttr = attrs[attrs.length - 1]
+            attrs = attrs.slice(0, attrs.length - 1)
+            for k, v of attr
+              obj = obj[v]
+            obj[lastAttr] = newVal
+          else
+            obj[attr] = newVal
           if $.isFunction(callback)
             callback obj, attr
           return
